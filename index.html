@@ -4,38 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="style.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="menu">
-        <div class="logo">Dashboard</div>
+        <div class="logo">
+            <img src="./svg/logo.svg" style="width:40px;height:40px;">
+            <div>Dashboard</div>
+        </div>
         <ul class="option one">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+            <li class="links"><img src="./svg/home.svg" style="width: 24px;height:24px;">Home</li>
+            <li class="links"><img src="./svg/account.svg" style="width: 24px;height:24px;">Profile</li>
+            <li class="links"><img src="./svg/message.svg" style="width: 24px;height:24px;">Messages</li>
+            <li class="links"><img src="./svg/history.svg" style="width: 24px;height:24px;">History</li>
+            <li class="links"><img src="./svg/tasks.svg" style="width: 24px;height:24px;">Tasks</li>
+            <li class="links"><img src="./svg/communities.svg" style="width: 24px;height:24px;">Communities</li>
         </ul>
         <ul class="option two">
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <li class="links"><img src="./svg/setting.svg" style="width: 24px;height:24px;">Settings</li>
+            <li class="links"><img src="./svg/support.svg" style="width: 24px;height:24px;">Support</li>
+            <li class="links"><img src="./svg/privacy.svg" style="width: 24px;height:24px;">Privacy</li>
         </ul>
     </div>
     <div class="user">
         <div class="usertop">
-            <input type="text">
-            <div>
-                Bell avatar Morgan Stanley
+            <div class="left"><img src="./svg/magnify.svg" style="width: 24px;height:24px;">
+            <div><input class="search" type="text"></div>
+            </div>
+        
+            <div class="right">
+                <div><img src="./svg/bell.svg" style="width: 24px;height:24px;"></div>
+                <div><img src="./svg/avatar1.svg" style="width: 48px;height:48px;"></div>
+                <div>Morgan Oakley (@morgan)</div>
             </div>
         </div>
         <div class="userbottom">
             <div class="greetings">
-                <div class="avatar">avatar</div>
-                <div>Hi there,</div>
-                <div>Morgan Stanlet (@morgan)</div>
+                <img class="avatar" src="./svg/avatar1.svg" style="width: 80px;height:80px;">
+                <h2>Hi there,</h2>
+                <p>Morgan Oakley (@morgan)</p>
             </div>
             <div class="buttons">
                 <button type="button">New</button>
@@ -46,28 +55,102 @@
     </div>
 
     <div class="contents">
-        <div class="title titleprojects">Your Projects</div>
+        <h2 class="title titleprojects">Your Projects</h2>
         <div class="projects">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
+            <div class="card">
+                <h3> Super Cool Project 1</h3>
+                <p>o"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div class="cardicons">
+                    <button><img src="./svg/star.svg"></button>
+                    <button><img src="./svg/heart.svg"></button>
+                    <button><img src="./svg/share.svg"></button>
+                </div>
+            </div>
+            <div class="card">
+                <h3> Super Cool Project 2</h3>
+                <p>o"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div class="cardicons">
+                    <button><img src="./svg/star.svg"></button>
+                    <button><img src="./svg/heart.svg"></button>
+                    <button><img src="./svg/share.svg"></button>
+                </div>
+            </div>
+            <div class="card">
+                <h3> Super Cool Project 3</h3>
+                <p>o"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div class="cardicons">
+                    <button><img src="./svg/star.svg"></button>
+                    <button><img src="./svg/heart.svg"></button>
+                    <button><img src="./svg/share.svg"></button>
+                </div>
+            </div>
+            <div class="card">
+                <h3> Super Cool Project 4</h3>
+                <p>o"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div class="cardicons">
+                    <button><img src="./svg/star.svg"></button>
+                    <button><img src="./svg/heart.svg"></button>
+                    <button><img src="./svg/share.svg"></button>
+                </div>
+            </div>
+            <div class="card">
+                <h3> Super Cool Project 5</h3>
+                <p>o"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div class="cardicons">
+                    <button><img src="./svg/star.svg"></button>
+                    <button><img src="./svg/heart.svg"></button>
+                    <button><img src="./svg/share.svg"></button>
+                </div>
+            </div>
+            <div class="card">
+                <h3> Super Cool Project 6</h3>
+                <p>o"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div class="cardicons">
+                    <button><img src="./svg/star.svg"></button>
+                    <button><img src="./svg/heart.svg"></button>
+                    <button><img src="./svg/share.svg"></button>
+                </div>
+            </div>
+            
         </div>
 
-        <div class="title titleannouncements">Announcements</div>
+        <h2 class="title titleannouncements">Announcements</h2>
         <div class="annoucements">
-            <div>Site Maintenance</div>
-            <div>Share day</div>
-            <div>Updated Privacy Policy</div>
+            <div class="announcementscardwrapper">
+                <div class="annoucementscard"><h4>Site Maintenance</h4>
+                    <p>However, it will be restricted to the container. It is easy to remove underline CSS as well</p>
+                </div>
+                <div class="annoucementscard"><h4>Share day</h4>
+                    <p>However, it will be restricted to the container. It is easy to remove underline CSS as well</p>
+                </div>
+                <div class="annoucementscard"><h4>Updated Privacy Policy</h4>
+                    <p>However, it will be restricted to the container. It is easy to remove underline CSS as well</p>
+                </div>
+            </div>
         </div>
 
-        <div class="title titletrending">Trending</div>
-        <div class="Trending">
-            <div>@Tegan</div>
-            <div>@morgan</div>
-            <div>@kendall</div>
+        <h2 class="title titletrending">Trending</h2>
+        <div class="trending">
+            <div class="trendinguser">
+                <img class="trendingavatar" src="./svg/avatar1.svg" style="width: 60px;height:60px;">
+                <p class="tag">@morgan</p>
+                <p class="caption">Super Cool Project</p>
+            </div>
+            <div class="trendinguser">
+                <img class="trendingavatar" src="./svg/avatar2.svg" style="width: 60px;height:60px;">
+                <p class="tag">@tegan</p>
+                <p class="caption">World Peace Builder</p>
+            </div>
+            <div class="trendinguser">
+                <img class="trendingavatar" src="./svg/avatar3.svg" style="width: 60px;height:60px;">
+                <p class="tag">@kendall</p>
+                <p class="caption">Life Changing App</p>
+            </div>
+            <div class="trendinguser">
+                <img class="trendingavatar" src="./svg/avatar4.svg" style="width: 60px;height:60px;">
+                <p class="tag">@alex</p>
+                <p class="caption">No Traffic Maker</p>
+            </div>
         </div>
 
 

@@ -1,8 +1,14 @@
+:root {
+    --shadow-main: 3px 3px 5px #d8d8d8;
+}
+
+
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;
-    font-family: monospace;
+    font-family: roboto;
+    box-sizing: border-box;
+    border: 1px solid red;
 
 }
 
@@ -10,25 +16,24 @@ ul, li {
     list-style-type: none;
 }
 
-
 body {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) 4fr;
+    grid-template-columns: minmax(235px, 1fr) 5fr;
     grid-template-rows: minmax(180px, 1fr) 5fr;
-    height: 100vh;
-    width: 100vw;
-    box-sizing: border-box;
-}
+    max-height: 100vh;
+    max-width: 100vw;
 
+}
+/*      left menu         */
 .menu {
     display: flex;
-    background-color: skyblue;
+    background-color: #38bdf8;
     color: white;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 15%;
+    gap: 8%;
     padding: 10%;
     font-size: 20px;
     font-weight: bold;
@@ -36,6 +41,8 @@ body {
 
 .logo {
     font-size: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .option {
@@ -43,36 +50,141 @@ body {
     gap: 15px;
 }
 
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+
+/*      top bar         */
+
 .user {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    z-index: 1;
+    box-shadow: var(--shadow-main);
 }
 
 .usertop {
-    display: flex;
-    justify-content: space-between;
-}
-
-.userbottom{
-    display: flex;
-    justify-content: space-between;
-}
-
-.greetings{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+.search {
+    width: 500px;
+    height: 36px;
+    background-color: #f0f9ff;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.usertop>.left {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    gap: 2rem;
+}
+
+.usertop>.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-right: 3rem;
+}
+
+.userbottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.greetings{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-self: start;;
+    font-size: larger;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+.buttons {
+    display: flex;
+    align-self: center;
+    justify-self: end;
+    margin-right: 3rem;
+    gap: 1rem;
+
+
+}
+.buttons>button{
+    background-color: #38bdf8;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 30px;
+}
+
+.buttons>button:hover{
+    border: 2px solid #38bdf8;
+    color: black;
+    background-color: white;
+}
+
+
 .avatar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    justify-self: end;
 }
+
+
+
+/*      content section         */
 
 .contents {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr 4fr;
+    grid-template-rows: 50px 1fr 50px 1fr;
+    background-color: #f0f9ff;
 }
+
+.title {
+    align-self: flex-end;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.card {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: var(--shadow-main), inset 0.5rem 0rem orange;;
+    
+}
+
+.card button {
+    width: 30px;
+    height: auto;
+    background-color: white;
+    border: none;
+}
+
+.card button:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.card .cardicons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
 
 .titleprojects {
     grid-column: 1 / 2;
@@ -84,7 +196,6 @@ body {
     grid-column: 1 / 2;
     grid-row: 2 / -1;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
 }
 
 .titleannouncements {
@@ -97,6 +208,19 @@ body {
     grid-row: 2 / 3;
 }
 
+.announcementscardwrapper, .trending {
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: var(--shadow-main);
+}
+.annoucementscard, .trendinguser {
+    width: 100%;
+    padding: 1rem;
+
+}
+
 .titletrending {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
@@ -105,4 +229,18 @@ body {
 .trending {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+}
+
+.trendinguser {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.trendingavatar {
+    grid-row: 1 / 3;
+
+}
+
+.trendinguser>.caption {
+    color: grey;
 }
